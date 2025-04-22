@@ -41,7 +41,7 @@ export default function QuizApp() {
         return (
             <div className="quiz">
                 <h1>QuizFinished..!</h1>
-                <h3>Your Score is : {score} out of {data.length}</h3>
+                <h3>Your Score is : {score} / {data.length}</h3>
             </div>
         )
     }
