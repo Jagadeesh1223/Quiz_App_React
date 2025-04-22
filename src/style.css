@@ -37,7 +37,7 @@ body{
       margin-bottom: 10px;
       cursor: pointer;
       background-color: #ece7e6;
-      width: 500px;
+      width: 100%;
       cursor: bold;
     }
     .quiz ul li.selected {
