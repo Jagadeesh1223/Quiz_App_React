@@ -1,16 +1,20 @@
-@media (width: 600px) {
+
+
+/* For screens below 400px */
+@media (max-width: 400px) {
   .quiz ul li {
-    display: flex;
-    
-    align-items: center;
-    border: 1px solid #694F8E;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    background-color: #ece7e6;
-    width: 100%;
+    flex: 1 1 100%; /* Stack options vertically */    
   }
+  .quiz button {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+  }
+  
+}
+
+h2,h1 {
+  color: blue;
 }
 body{
     background-color:#99919b;
@@ -22,29 +26,38 @@ body{
       margin-top: 50px;
       padding: 20px;
       background-color: #e7b35a;
-      width: 70%;
+      width: 80%;
       border-radius: 10px;
       display: flex;
       align-items: center;
       flex-direction: column;
     }
+
+    .quiz ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
     .quiz ul li {
       display: flex;
-      align-items: center;
+      flex: 1 1 calc(100% - 10px); /* 2 per row with spacing */
+      padding: 10px;
+      background-color: #ece7e6;
       border: 1px solid #694F8E;
       border-radius: 5px;
       padding: 10px;
       margin-bottom: 10px;
       cursor: pointer;
-      background-color: #ece7e6;
-      width: 500px;
-      cursor: bold;
+      width: 100px;
     }
+    
     .quiz ul li.selected {
       background-color: #6d9d80;
       color: rgb(9, 9, 9);
+      font-weight: bold;
     }
     .quiz button {
+      
       padding: 10px;
       width: 200px;
       border-radius: 15px;
@@ -75,6 +88,7 @@ body{
       margin-bottom: 10px;
       cursor: pointer;
       background-color: #96e8d9;
-      width: 500px;
+      
       cursor: bold;
+      
     }
