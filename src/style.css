@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c77f2fdcc2f5c43623995ccad30d2107c942d8e8
 /* For screens below 400px */
 @media (max-width: 400px) {
   .quiz ul li {
@@ -91,4 +94,8 @@ body{
       
       cursor: bold;
       
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> c77f2fdcc2f5c43623995ccad30d2107c942d8e8
